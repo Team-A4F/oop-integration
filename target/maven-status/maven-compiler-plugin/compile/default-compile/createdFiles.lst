@@ -1,0 +1,10 @@
+Controller\CourseController.class
+Controller\NotificationController.class
+Controller\StudentController.class
+Views\StudentView.class
+Model\Course.class
+Model\Student.class
+Views\StudentView$1.class
+Model\Exam.class
+Controller\ExamController.class
+Model\Notification.class
