@@ -2,6 +2,7 @@ Controller\ReportController.class
 Views\StudentMain$5.class
 Controller\CourseController.class
 Views\NewIssue.class
+Views\NewStudent$6.class
 Views\NewExam$3.class
 Views\NewCourse$4.class
 Views\ExamMain.class
@@ -46,6 +47,7 @@ Views\ExamMain$2.class
 Controller\StudentController.class
 Views\NewExam$2.class
 Views\StudentView.class
+Views\NewStudent$5.class
 Views\StudentMain$4.class
 Controller\ExamController.class
 Views\ReportMain.class

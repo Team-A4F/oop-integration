@@ -1,9 +1,7 @@
-
 package Views;
-
+import DatabaseLayer.DatabaseConnection;
 
 public class ExamMain extends javax.swing.JFrame {
-
     
     public ExamMain() {
         initComponents();
