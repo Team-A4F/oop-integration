@@ -38,10 +38,10 @@ CREATE TABLE `exam_enquiries` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `stu_registered`
+-- Table structure for table `registered_students`
 --
 
-CREATE TABLE `stu_registered` (
+CREATE TABLE `registered_students` (
   `studentID` int(11) NOT NULL,
   `name` varchar(255) DEFAULT NULL,
   `nic` varchar(15) DEFAULT NULL,
@@ -64,9 +64,9 @@ ALTER TABLE `exam_enquiries`
   ADD KEY `studentID` (`studentID`);
 
 --
--- Indexes for table `stu_registered`
+-- Indexes for table `registered_students`
 --
-ALTER TABLE `stu_registered`
+ALTER TABLE `registered_students`
   ADD PRIMARY KEY (`studentID`);
 
 --
@@ -74,9 +74,9 @@ ALTER TABLE `stu_registered`
 --
 
 --
--- AUTO_INCREMENT for table `stu_registered`
+-- AUTO_INCREMENT for table `registered_students`
 --
-ALTER TABLE `stu_registered`
+ALTER TABLE `registered_students`
   MODIFY `studentID` int(11) NOT NULL AUTO_INCREMENT;
 
 --
@@ -87,7 +87,7 @@ ALTER TABLE `stu_registered`
 -- Constraints for table `exam_enquiries`
 --
 ALTER TABLE `exam_enquiries`
-  ADD CONSTRAINT `exam_enquiries_ibfk_1` FOREIGN KEY (`studentID`) REFERENCES `stu_registered` (`studentID`);
+  ADD CONSTRAINT `exam_enquiries_ibfk_1` FOREIGN KEY (`studentID`) REFERENCES `registered_students` (`studentID`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
