@@ -1,14 +1,25 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package Model;
 
-/**
- *
- * @author Ashan
- */
 public class Exam {
+    private String examdateTxt;
+    private String subjectTxt;
+    private String enqTxt;
+    private String studIDTxt;
+
+    public String getExamdateTxt() {
+        return examdateTxt;
+    }
+
+    public String getSubjectTxt() {
+        return subjectTxt;
+    }
+
+    public String getEnqTxt() {
+        return enqTxt;
+    }
+
+    public String getStudIDTxt() {
+        return studIDTxt;
+    }
     
 }

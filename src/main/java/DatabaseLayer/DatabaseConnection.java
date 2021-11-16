@@ -15,11 +15,12 @@ public class DatabaseConnection {
     private DatabaseConnection() {
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
-            con = DriverManager.getConnection(URL,Uname,Password);
+            con = DriverManager.getConnection(URL, Uname, Password);
+            System.out.println("Connection Success");
         } catch (SQLException ex) {
-            System.out.println("Databease issue!" + ex);
+            System.out.println("Databease issue!" + ex.getMessage() );
         } catch (ClassNotFoundException ex) {
-            System.out.println("Databease issue!" + ex);
+            System.out.println("Databease issue!" + ex.getMessage() );
         }
     }
     

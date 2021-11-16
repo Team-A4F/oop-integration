@@ -1,14 +1,19 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package Controller;
 
-/**
- *
- * @author Ashan
- */
+import Model.Exam;
+import DatabaseAccessLayer.ExamAccessLogic;
+
 public class ExamController {
+    ExamAccessLogic exal;
+    
+    public  ExamController() {
+        exal = new ExamAccessLogic();
+    }
+    
+    public boolean insertExamEnquiry(Exam exam) {
+        System.out.println("exam2222 ==== " + exam );
+        boolean result = exal.addExamEnquiry(exam);
+        return result;
+    }
     
 }
