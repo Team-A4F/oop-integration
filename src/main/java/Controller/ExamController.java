@@ -17,7 +17,6 @@ public class ExamController {
     }
     
     public boolean insertExamEnquiry(Exam exam) {
-        System.out.println("exam22225555 ==== " + exam );
         boolean result = exal.addExamEnquiry(exam);
         return result;
     }

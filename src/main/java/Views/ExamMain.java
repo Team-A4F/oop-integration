@@ -210,14 +210,12 @@ public class ExamMain extends javax.swing.JFrame {
     private void submitEnqBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_submitEnqBtnActionPerformed
 
         objExam = objController.addExamEnquiry(examdateTxt.getText(), subjectTxt.getText(), enqTxt.getText(), studIDTxt.getText());
-        boolean result = objController.insertExamEnquiry(objExam);
-        
-        if(result)
-            {
-                JOptionPane.showMessageDialog(null, "Added OKKKK", "Succ added1111", JOptionPane.PLAIN_MESSAGE);
-            }else{
-               JOptionPane.showMessageDialog(null, "Added errORRR", "Succ added1111", JOptionPane.PLAIN_MESSAGE);
-            }
+        boolean result = objController.insertExamEnquiry(objExam);        
+        if(result) {
+            JOptionPane.showMessageDialog(null, "Successful", "Successfully added.", JOptionPane.PLAIN_MESSAGE);
+        }else{
+            JOptionPane.showMessageDialog(null, "Error", "Failed to add.", JOptionPane.PLAIN_MESSAGE);
+        }
     }//GEN-LAST:event_submitEnqBtnActionPerformed
 
     
