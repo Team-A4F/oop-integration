@@ -16,11 +16,13 @@ public class ExamAccessLogic {
     public boolean addExamEnquiry(Exam exam) {
         System.out.println("exam ==== " + exam );
         try {
+            System.out.println("exam ==== exam.getSubjectTxt() -> " + exam.getSubjectTxt() );
             JOptionPane.showMessageDialog(null, "Added Enquiry 11111", "Succ added1111", JOptionPane.PLAIN_MESSAGE);
-            String query = "INSERT INTO exam_enquiries (subject, exam_date, enquiry, studentID) VALUES (" + exam.getSubjectTxt() +","+ exam.getExamdateTxt() +","+ exam.getEnqTxt() +","+ exam.getStudIDTxt() +");";
+            String query = "INSERT INTO exam_enquiries (subject, exam_date, enquiry, studentID) VALUES ('" + exam.getSubjectTxt() +"','"+ exam.getExamdateTxt() +"','"+ exam.getEnqTxt() +"','"+ exam.getStudIDTxt() +"');";
             boolean result = singleConn.ExcecuteQuery(query);
             JOptionPane.showMessageDialog(null, "Added Enquiry 22222", "Succ added1111", JOptionPane.PLAIN_MESSAGE);
-            return result;            
+                         System.out.println("exam ==== result -> " + result );
+            return result;  
         } catch (Exception ex) {
             System.out.println("SQl Error when adding " + ex.getMessage() );
             JOptionPane.showMessageDialog(null, "Eror", "Failed to add", JOptionPane.WARNING_MESSAGE);

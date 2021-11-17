@@ -8,11 +8,15 @@ import javax.swing.JOptionPane;
 
 public class ExamMain extends javax.swing.JFrame {
     Exam objExam;
+    Exam[] ExamArray;
     ExamController objController;
+    int index;
     
     public ExamMain() {
         initComponents();
         objController = new ExamController();
+        ExamArray = new Exam[100];
+        index = 0;
     }
     
     @SuppressWarnings("unchecked")
@@ -204,6 +208,8 @@ public class ExamMain extends javax.swing.JFrame {
 
         //Submit new exam enquiry
     private void submitEnqBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_submitEnqBtnActionPerformed
+
+        objExam = objController.addExamEnquiry(examdateTxt.getText(), subjectTxt.getText(), enqTxt.getText(), studIDTxt.getText());
         boolean result = objController.insertExamEnquiry(objExam);
         
         if(result)

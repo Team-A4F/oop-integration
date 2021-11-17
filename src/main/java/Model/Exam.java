@@ -6,6 +6,13 @@ public class Exam {
     private String enqTxt;
     private String studIDTxt;
 
+    public Exam(String examdateTxt, String subjectTxt, String enqTxt, String studIDTxt) {
+        this.examdateTxt = examdateTxt;
+        this.subjectTxt = subjectTxt;
+        this.enqTxt = enqTxt;
+        this.studIDTxt = studIDTxt;
+    }
+    
     public String getExamdateTxt() {
         return examdateTxt;
     }
