@@ -1,40 +1,38 @@
-#  OOP Group Assignment - Members
+#  Assignment Group Members & Project Parts
 
-1 T.G. Ashan Nadeeka - IT19786438
-
-#Project Part:
-
-
-  Student Registration (Add, Update and Delete)
-
-
-
-2. W.A.S. Fernando - IT21703294 
-
-#Project Part:
-
-  Exam inquiries (Add, Update and Delete)
-
-
-
-3 M.P.W.P. Anjana Lakshan - IT21711282
-
-#Project Part:
-
-  Courses (Add, Update and Delete)
-
-
-
-4 Arshad Sahardeen - IT21702754
-
-#Project Part:
-
-  Did not contribute to the project.
-
-
-
-5 P.A.D. Fionima Saparamadu - IT21711800
-
-#Project Part:
-
-  Did not contribute to the project.
+<ul>
+  <li>IT19786438  -  T.G. Ashan Nadeeka</li>
+  <ul>
+     <li><strong>Project Part:</strong></li>
+     <li>Login</li>
+     <li>Student Registration</li>
+  </ul>
+  <br />
+  
+  <li>IT21703294  -  W.A.S. Fernando</li>
+  <ul>
+     <li><strong>Project Part:</strong></li>
+     <li>Exam inquiries</li>
+  </ul>
+  <br />
+  
+  <li>IT21711282  -  M.P.W.P. Anjana Lakshan</li>
+  <ul>
+     <li><strong>Project Part:</strong></li>
+     <li>Courses</li>
+  </ul>
+  <br />
+  
+  <li>IT21702754  -  Arshad Sahardeen</li>
+  <ul>
+     <li><strong>Project Part:</strong></li>
+     <li>Did not contribute to the project.</li>
+  </ul>
+  <br />
+  
+  <li>IT21711800  -  P.A.D. Fionima Saparamadu</li>
+  <ul>
+     <li><strong>Project Part:</strong></li>
+     <li>Did not contribute to the project.</li>
+  </ul>
+</ul>
